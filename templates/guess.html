@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Guessing Game</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/guess.css') }}" type="text/css">
+    <script src="{{ url_for('static', filename='js/guess.js') }}" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h3 class="title">You have 5 guesses to get the correct number. Good Luck!</h3>
+            <p class="error"></p>
+            <img class="img-result" src="img/start.png" alt="result">
+            <h4 class="message"></h4>
+            <input id="user-input" type="text" placeholder="1-99">
+            <button class="form-btn" id="submit" onclick="checkNumber()">Submit</button>
+            <p class="guesses"></p>
+            <p class="answer"></p>
+            <p class="attempts"></p>
+            <button onclick="reset()" hidden class="form-btn" id="try-again">Play Again</button>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/games.css') }}" type="text/css">
+
+    <!--comment this link out in production-->
+    <link rel="shortcut icon" href="#">
+
+</head>
+
+<body>
+    <main>
+        <div>
+            <h2>Choose a game!</h2>
+            <a href="{{ url_for('guess') }}"><button>Guessing game</button></a>
+            <a href="{{ url_for('tic-tac') }}"><button>Tic-Tac-Toe</button></a>
+        </div>
+
+    </main>
+</body>
+
+</html>

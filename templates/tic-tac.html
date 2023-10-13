@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tic-tac.css') }}" type="text/css">
+
+    <!--comment this link out in production-->
+    <link rel="shortcut icon" href="#">
+
+    <script src="{{ url_for('static', filename='js/tic-tac.js') }}" defer></script>
+</head>
+
+<body>
+    <main>
+        <form action="javascript:void(0);">
+            <div class="create">
+                <h2 class="page-title">Tic Tace Toe</h2>
+                <div id="live-title-1">
+                    <h2 class="player-title">Player 1:
+                        <span id="p1c"></span>
+                    </h2>
+
+                </div>
+                <div id="live-title-2">
+                    <h2 class="player-title">Player 2:
+                        <span id="p2c"></span>
+                    </h2>
+                </div>
+
+                <h2>Enter your names.</h2>
+                <h2 class="error"></h2>
+                <div>
+                    <label for="player-1">Player 1</label>
+                    <input id="player-1" class="player-input" type="text">
+                </div>
+
+                <div>
+                    <label for="player-2">Player 2</label>
+                    <input id="player-2" class="player-input" type="text">
+                </div>
+                <button type="submit" class="form-btn" onclick="createGame()">Submit</button>
+            </div>
+        </form>
+
+        <div class="header" hidden>
+            <div class="name-container">
+                <h2 class="player-title">Player 1:
+                    <span id="player-1-name"></span>
+                </h2>
+
+            </div>
+            <div class="name-container">
+                <h2 class="player-title">Player 2:
+                    <span id="player-2-name"></span>
+                </h2>
+
+            </div>
+
+            <h4 class="playersTurn"></h4>
+        </div>
+
+        <div class="container" hidden>
+
+        </div>
+        <div class="reset-btns" hidden>
+            <button id="reset" class="form-btn" onclick="reset()">New Players</button>
+            <button id="play-again" class="form-btn" onclick="createGame()">Play Again</button>
+        </div>
+
+
+    </main>
+</body>
+
+</html>

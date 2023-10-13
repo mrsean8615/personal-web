@@ -1,0 +1,63 @@
+body {
+    color: white;
+    background-color: #121212;
+}
+
+.container {
+    display: grid;
+    margin: auto auto;
+    text-align: center;
+    width: 50%;
+}
+
+.img-result {
+    width: 125px;
+    margin: 10px auto;
+}
+
+.error {
+    font-size: 20px;
+    color: #e63946;
+}
+
+.form-btn {
+    grid-row: 10;
+    margin: 15px auto 0px auto;
+    font-size: 16px;
+    width: 50%;
+    color: white;
+    background-color: #003049;
+    border: 0px;
+    height: 75px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.form-btn a {
+    text-decoration: none;
+}
+
+.form-btn:hover {
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    background-color: #eb5e28;
+}
+
+#user-input {
+    margin: auto auto;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.guesses {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.title {
+    font-size: 20px;
+}
